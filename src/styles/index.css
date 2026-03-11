@@ -1,0 +1,33 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@keyframes hoverMotion {
+  0% {
+    text-shadow: 1px 1px 2px #00000033;
+  }
+  20% {
+    text-shadow: 2px 2px 4px #00000099;
+  }
+  40% {
+    text-shadow: 2px 3px 4px #00000088;
+  }
+  60% {
+    text-shadow: 3px 3px 5px #000000cc;
+  }
+  80% {
+    text-shadow: 3px 4px 6px #000000aa;
+  }
+  100% {
+    text-shadow: 4px 4px 6px #000000;
+  }
+}
+
+.hovered {
+  animation: hoverMotion 2s ease-in-out infinite alternate;
+}

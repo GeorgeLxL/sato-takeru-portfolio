@@ -1,0 +1,19 @@
+{
+  "educationAcademic": "学歴",
+  "education1Degree": "コンピュータサイエンス修士",
+  "education1Institution": "京都大学経営管理大学院",
+  "education1Period": "2017 - 2019",
+  "education1Description": "経営学、ERPアーキテクチャ、システム設計、システム保守の総合的な学習。",
+  "education1Achieve1": "システム設計とシステム管理を専門とする",
+  "education1Achieve2": "経営管理、人事管理、CRM管理における強固な基盤",
+  "education1Achieve3": "管理の専門知識を持って卒業",
+  "education2Degree": "コンピュータソフトウェア工学の理学士",
+  "education2Institution": "京都大学",
+  "education2Period": "2013 - 2017",
+  "education2Description": "コンピュータサイエンスの基礎、ソフトウェアエンジニアリングの原則、アルゴリズム、最新の開発手法に関する包括的な研究。",
+  "education2Achieve1": "ソフトウェアエンジニアリングに特化",
+  "education2Achieve2": "コンピュータサイエンス理論の強固な基礎",
+  "education2Achieve3": "技術的な専門知識を持って卒業",
+  "educationCertification": "認定資格",
+  "educationAdditionalTitle": "追加トレーニング"
+}

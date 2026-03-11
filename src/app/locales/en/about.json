@@ -1,0 +1,19 @@
+{
+  "aboutTitle": "About Me",
+  "aboutSubTitle": "Hi, I'm Sato Takeru!",
+  "aboutDesc1": "I lead teams in ERP, AI, and full-stack web development, creating intelligent and scalable solutions that connect complex business processes with modern technology.",
+  "aboutDesc2": "My focus is on driving innovation, improving efficiency, and delivering measurable results for every project. By combining strategic leadership with hands-on expertise, I help organizations turn ambitious ideas into high-performing digital solutions.",
+  "aboutDesc3": "I am passionate about fostering collaborative, creative teams that embrace cutting-edge tools and methodologies to solve real-world challenges.",
+  "aboutFeature1Title": "Leadership & Technical Vision",
+  "aboutFeature1Desc1": "Progressed from Frontend Developer → Project Manager → Technical Lead → CTO.",
+  "aboutFeature1Desc2": "Proven ability to lead engineering teams, define technical architecture, and manage product roadmaps.",
+  "aboutFeature1Desc3": "Demonstrates strategic thinking in building scalable, enterprise-grade systems.",
+  "aboutFeature2Title": "Full-Stack & ERP Expertise",
+  "aboutFeature2Desc1": "Deep experience across frontend (React, Angular, Next.js) and backend (Node.js, Python frameworks).",
+  "aboutFeature2Desc2": "Specializes in ERP systems development, integrating complex enterprise workflows with modern web platforms.",
+  "aboutFeature2Desc3": "Strong database and API design skills for scalable, reliable applications.",
+  "aboutFeature3Title": "AI Integration & Innovation",
+  "aboutFeature3Desc1": "Experienced in incorporating AI into software solutions to automate processes and enhance functionality.",
+  "aboutFeature3Desc2": "Combines AI, full-stack development, and ERP expertise to create intelligent, business-ready applications.",
+  "aboutFeature3Desc3": "Demonstrates ability to deliver cutting-edge technology in real-world enterprise contexts."
+}
