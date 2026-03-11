@@ -61,7 +61,7 @@ export default function About() {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl blur-2xl opacity-30"></div>
             <img
-              src="./assets/images/about.png"
+              src="/assets/images/about.png"
               alt="Sato Takeru"
               className="relative rounded-2xl shadow-2xl w-full h-auto border-2 border-purple-500/30"
             />

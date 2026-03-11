@@ -41,7 +41,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full blur-3xl opacity-90 animate-pulse"></div>
             <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full blur-2xl opacity-60 animate-pulse"></div>
             <img
-              src="./assets/images/avatar.jpg"
+              src="/assets/images/avatar.jpg"
               alt="Sato Takeru"
               className="relative rounded-full w-full h-full object-cover object-center border-4 border-purple-500/50 shadow-2xl shadow-purple-500/50"
             />
