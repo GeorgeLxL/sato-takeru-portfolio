@@ -1,11 +1,9 @@
 
   # Portfolio website
 
-  This is a code bundle for Sato Takeru's Portfolio website. The original project is available at https://www.figma.com/design/RIvWVNJZ81VZiwYgEW5wVI/Portfolio-website.
+  This is my portfolio site code.
 
-  ## Running the code
+  ## Please check it.
 
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
+  https://sato-takeru.netlify.app[https://sato-takeru.netlify.app]
   
