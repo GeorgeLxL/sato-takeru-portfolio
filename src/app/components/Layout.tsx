@@ -7,7 +7,7 @@ import MouseRipple from "./MouseRipple";
 import CursorTail from "./CursorTail";
 import { AnimatePresence, motion } from "motion/react";
 
-const ROUTE_ORDER = ["/", "/about", "/experience", "/skills", "/education"];
+const ROUTE_ORDER = ["/", "/about", "/experience", "/skills", "/education", "/works"];
 const WHEEL_THRESHOLD = 30;
 const EDGE_TRIGGER_DISTANCE = 120;
 const NAVIGATION_COOLDOWN_MS = 700;

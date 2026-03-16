@@ -116,7 +116,7 @@ export default function Skills() {
           <h2 className="text-[2.5rem] font-bold text-white text-center mb-8">{t("skillExpertiseTitle")}</h2>
           <div className="grid md:grid-cols-2 gap-12">
               <img
-                src="/assets/images/skill.png"
+                src="/assets/images/skill.jpg"
                 alt="Sato Takeru"
                 className="relative rounded-2xl shadow-2xl w-full h-auto border-2 border-purple-500/30"
               />
