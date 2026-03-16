@@ -31,6 +31,7 @@ export default function Header() {
     { name: t("Experience"), path: "/experience" },
     { name: t("Skills"), path: "/skills" },
     { name: t("Education"), path: "/education" },
+    { name: t("Works"), path: "/works" },
     { name: t("Contact"), path: "mailto:crownelf4@gmail.com" },
   ];
 
