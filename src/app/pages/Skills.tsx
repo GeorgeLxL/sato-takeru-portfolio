@@ -7,6 +7,7 @@ import {
   Server,
   GitBranch,
   Palette,
+  ChartSpline,
   Wrench,
 } from "lucide-react";
 import { useTranslation } from 'react-i18next';
@@ -24,6 +25,18 @@ export default function Skills() {
   const skillCategories = [
     {
       title: t("skillCategories1"),
+      icon: ChartSpline,
+      color: "from-pink-600 to-purple-500",
+      skills: [
+        { name: "Odoo", level: 90 },
+        { name: "ERPNext", level: 90 },
+        { name: "SAP ERP", level: 80 },
+        { name: "Oracle NetSuite", level: 65 },
+        { name: "MicroSoft Dynamics", level: 60 },
+      ],
+    },
+    {
+      title: t("skillCategories2"),
       icon: Code2,
       color: "from-purple-500 to-purple-600",
       skills: [
@@ -35,7 +48,7 @@ export default function Skills() {
       ],
     },
     {
-      title: t("skillCategories2"),
+      title: t("skillCategories3"),
       icon: Server,
       color: "from-pink-500 to-pink-600",
       skills: [
@@ -47,7 +60,7 @@ export default function Skills() {
       ],
     },
     {
-      title: t("skillCategories3"),
+      title: t("skillCategories4"),
       icon: Layout,
       color: "from-purple-600 to-pink-500",
       skills: [
@@ -56,18 +69,6 @@ export default function Skills() {
         { name: "TypeScript", level: 95 },
         { name: "Angular", level: 80 },
         { name: "Tailwind CSS", level: 95 },
-      ],
-    },
-    {
-      title: t("skillCategories4"),
-      icon: Database,
-      color: "from-pink-600 to-purple-500",
-      skills: [
-        { name: "PostgreSQL", level: 90 },
-        { name: "Pinecone", level: 90 },
-        { name: "FAISS", level: 95 },
-        { name: "MongoDB", level: 85 },
-        { name: "Redis", level: 90 },
       ],
     },
     {
