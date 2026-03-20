@@ -1,4 +1,4 @@
-import { Telegram, GitHub } from '@mui/icons-material'
+import { Telegram, GitHub, WhatsApp } from '@mui/icons-material'
 import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
@@ -8,13 +8,22 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex justify-center items-center space-x-6 mb-3">
           <a
-            href="https://t.me/satotakeru6"
+            href="https://t.me/georgelxl"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-400 hover:text-blue-500 transition-colors duration-200"
             aria-label="Telegram"
           >
             <Telegram fontSize='large' />
+          </a>
+          <a
+            href="https://wa.me/447347611442"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 hover:text-green-500 transition-colors duration-200"
+            aria-label="Telegram"
+          >
+            <WhatsApp fontSize='large' />
           </a>
           <a
             href="https://github.com/GeorgeLxL"
