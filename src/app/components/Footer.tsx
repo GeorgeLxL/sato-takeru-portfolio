@@ -1,42 +1,42 @@
-import { Telegram, GitHub, WhatsApp } from '@mui/icons-material'
+import { Telegram, GitHub, WhatsApp } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
-    <footer className="border-t bg-slate-950/80 backdrop-blur-lg border-b border-purple-500/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="flex justify-center items-center space-x-6 mb-3">
+    <footer className="border-t border-white/10 bg-black/60 backdrop-blur-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex justify-center items-center gap-6 mb-4">
           <a
             href="https://t.me/georgelxl"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-500 transition-colors duration-200"
+            className="text-gray-500 hover:text-white transition-colors duration-200"
             aria-label="Telegram"
           >
-            <Telegram fontSize='large' />
+            <Telegram />
           </a>
           <a
             href="https://wa.me/447347611442"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-green-600 hover:text-green-500 transition-colors duration-200"
-            aria-label="Telegram"
+            className="text-gray-500 hover:text-white transition-colors duration-200"
+            aria-label="WhatsApp"
           >
-            <WhatsApp fontSize='large' />
+            <WhatsApp />
           </a>
           <a
             href="https://github.com/GeorgeLxL"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-white transition-colors duration-200"
-            aria-label="Telegram"
+            className="text-gray-500 hover:text-white transition-colors duration-200"
+            aria-label="GitHub"
           >
-            <GitHub fontSize='large' />
+            <GitHub />
           </a>
         </div>
-        <p className='text-white text-center mb-3 text-lg'>@ {t("name")} 2026</p>
+        <p className="text-gray-600 text-center text-sm">© {t("name")} 2026</p>
       </div>
     </footer>
   );
-};
+}
