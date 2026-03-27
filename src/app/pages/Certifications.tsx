@@ -1,34 +1,49 @@
-import { motion } from "motion/react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import { Award } from "lucide-react";
 import { useTranslation } from 'react-i18next';
+import Modal from "../components/Modal";
 
 export default function Certifications() {
   const { t } = useTranslation();
+  const [modalIndex, setModalIndex] = useState<number | null>(null);
 
   const certifications = [
     {
-      name: "SAP Activate Project Manager",
-      issuer: "SAP",
-      year: "2021",
-      link: "https://www.sap.com/certification"
+      name: "Software Engineer",
+      issuer: "HackerRank",
+      link: "https://www.hackerrank.com/certificates/1cf5e9dd73a2",
+      image: "./assets/images/certifications/1.png"
     },
     {
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      year: "2020",
-      link: "https://aws.amazon.com/certification"
+      name: "Node.js (Intermediate)",
+      issuer: "HackerRank",
+      link: "https://www.hackerrank.com/certificates/c8fe2665747a",
+      image: "./assets/images/certifications/2.png"
     },
     {
-      name: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      year: "2020",
-      link: "https://cloud.google.com/certification"
+      name: "React (Basic)",
+      issuer: "HackerRank",
+      link: "https://www.hackerrank.com/certificates/3e620c5baff8",
+      image: "./assets/images/certifications/3.png"
     },
     {
-      name: "Docker & Kubernetes Certified",
-      issuer: "Docker Inc.",
-      year: "2022",
-      link: "https://www.docker.com/certification"
+      name: "JavaScript (Intermediate)",
+      issuer: "HackerRank",
+      link: "https://www.hackerrank.com/certificates/9739390ceeeb",
+      image: "./assets/images/certifications/4.png"
+    },
+    {
+      name: "Rest API (Intermediate)",
+      issuer: "HackerRank",
+      link: "https://www.hackerrank.com/certificates/e81307f10d9f",
+      image: "./assets/images/certifications/5.png"
+    },
+    {
+      name: "Problem Solving (Intermediate)",
+      issuer: "HackerRank",
+      link: "https://www.hackerrank.com/certificates/3083ab3629d9",
+      image: "./assets/images/certifications/6.png"
     },
   ];
 
@@ -57,11 +72,9 @@ export default function Certifications() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
-            <motion.a
+            <motion.div
               key={index}
-              href={cert.link}
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={() => setModalIndex(index)}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -69,9 +82,8 @@ export default function Certifications() {
               className="bg-white/5 rounded-2xl border border-white/10 hover:border-green-500/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(34,197,94,0.2)] transition-all duration-300 overflow-hidden cursor-pointer"
             >
               {/* Badge placeholder area */}
-              <div className="h-56 bg-white/5 border-b border-white/10 flex flex-col items-center justify-center gap-3">
-                <Award className="text-green-400" size={56} />
-                <p className="text-gray-500 text-xs font-mono tracking-widest uppercase">Coming Soon</p>
+              <div className="h-56 overflow-hidden bg-white/5 border-b border-white/10 flex flex-col items-center justify-center gap-3">
+                <img src={cert.image} alt={cert.name} />
               </div>
 
               {/* Info */}
@@ -83,17 +95,25 @@ export default function Certifications() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-2">
                       <h3 className="text-sm font-bold text-white leading-snug">{cert.name}</h3>
-                      <span className="text-[10px] font-mono text-gray-500 bg-white/5 border border-white/10 px-2 py-0.5 rounded-full shrink-0">{cert.year}</span>
                     </div>
                     <p className="text-green-400 text-xs mt-0.5">{cert.issuer}</p>
                   </div>
                 </div>
               </div>
-            </motion.a>
+            </motion.div>
           ))}
         </div>
 
       </div>
+      <AnimatePresence>
+        {modalIndex !== null && (
+          <Modal
+            certs={certifications}
+            initialIndex={modalIndex}
+            onClose={() => setModalIndex(null)}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }
