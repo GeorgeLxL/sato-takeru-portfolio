@@ -19,13 +19,13 @@ export default function LanguageSwitcher(props: LanguageSwitcherProps) {
   return (
     <div className='flex text-gray-500'>
       <button
-        className={`text-${size} w-100 rounded-sm px-1 ${i18n.language === 'en' ? 'bg-purple-500 text-white' : ''}`}
+        className={`text-${size} w-100 rounded-sm px-1 ${i18n.language === 'en' ? 'bg-green-500 text-white' : ''}`}
         onClick={() => changeLanguage('en')}
       >
         EN
       </button>
       <button
-        className={`text-${size} w-100 rounded-sm px-1 ${i18n.language === 'jp' ? 'bg-purple-500 text-white' : ''}`}
+        className={`text-${size} w-100 rounded-sm px-1 ${i18n.language === 'jp' ? 'bg-green-500 text-white' : ''}`}
         onClick={() => changeLanguage('jp')}
       >
         JP
