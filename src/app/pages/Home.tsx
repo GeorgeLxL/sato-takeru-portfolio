@@ -7,7 +7,7 @@ export default function Home() {
   const { t } = useTranslation();
   return (
     <div className="min-h-screen flex items-center px-4 pt-16">
-      <div className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center py-20">
+      <div className="max-w-5xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center py-20">
 
         <div>
 <motion.h1
@@ -65,11 +65,11 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 0.7 }}
         >
           <div className="relative w-72 h-72 md:w-96 md:h-96">
-            <div className="absolute inset-0 bg-gradient-to-br from-green-300/80 to-emerald-300/80 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute inset-0 bg-gradient-to-br from-green-300/80 to-emerald-300/80 rounded-3xl blur-3xl animate-pulse" />
             <img
               src="/assets/images/avatar.jpg"
               alt="Sato Takeru"
-              className="relative rounded-full w-full h-full object-cover object-center border border-white/10 shadow-2xl"
+              className="relative rounded-3xl w-full h-full object-cover object-center border border-white/10 shadow-2xl"
             />
           </div>
         </motion.div>

@@ -45,7 +45,7 @@ export default function Skills() {
 
   return (
     <div className="min-h-screen pt-28 pb-20 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
 
         <motion.p
           className="text-green-400 font-mono text-sm tracking-widest uppercase mb-3"
